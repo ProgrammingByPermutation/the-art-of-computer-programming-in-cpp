@@ -1,6 +1,8 @@
 #include <iostream>
+#include "permutations.h"
 
-int main()
-{
-    std::cout << "Hello World!\n"; 
+using namespace std;
+
+int main() {
+    cout << "Answer: " << permutations::multiply_cycle("(acfg)(bcd)(aed)(fade)(bgfae)");
 }

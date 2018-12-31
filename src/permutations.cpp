@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "permutations.h"
 #include <iostream>
 
@@ -12,8 +13,7 @@ string permutations::multiply_cycle(string formula) {
     if (0 == formula.length())
         return string();
 
-    // Make a copy of the input for the result
-    // We can technically perform the operation in place but no.
+    // Make a copy of the input that we can manipulate
     string working = formula;
     bool* tags = new bool[working.length()]{false};
     bool* tag = &tags[0];
